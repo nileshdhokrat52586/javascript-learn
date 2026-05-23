@@ -37,3 +37,23 @@ const myFunction = function () {
   return "Hello JS";
 };
 console.log(typeof myFunction);
+
+/*------------ Stack Memory ----------------*/
+//Stack(Primitive)
+
+let firstValue = "1StValue";
+let secondValue = firstValue;
+secondValue = "2ndValue";
+
+console.log(secondValue, firstValue);
+
+//Heap(Non-Primitive/Reference)
+let userOne = {
+  email: "nilesh@test.com",
+  upi: "nilesh@axios",
+};
+let userTwo = userOne;
+
+userTwo.email = "nilesh@google.com";
+
+console.log(userOne, userTwo);
