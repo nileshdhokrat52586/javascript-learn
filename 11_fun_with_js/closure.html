@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Closure aur chi</title>
+  </head>
+  <body></body>
+  <script>
+    function outer() {
+      let username = "nilesh";
+      function inner() {
+        let username2 = "dhokrat";
+        console.log(username);
+      }
+
+      inner();
+      console.log(username2);
+    }
+    outer();
+  </script>
+</html>
